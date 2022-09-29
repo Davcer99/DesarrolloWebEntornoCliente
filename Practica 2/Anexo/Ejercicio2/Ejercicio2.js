@@ -5,6 +5,7 @@ function mostrarDni() {
         alert("Introduce un dni");
     }else{
         alert("El dni introducido es: " + dni)
+        window.location.href= window.location.href +"?dni="+ dni;
     }
 };
 
