@@ -1,12 +1,16 @@
 'use strict'
-windows.onload = function(){
-    function links() {
-        alert("funciona")
-        var contenido = document.getElementsByName('a');
-        alert("Hay " + (contenido.length()+1) + " links en la página")
-    }
-    function imagenes() {
-        var contenido = document.getElementsByName('img');
-        alert("Hay " + (contenido.length() +1) + " imagenes en la página")
-    }
+
+function enlaces() {
+    var contenido = document.getElementsByTagName('a');
+    alert(contenido.length);
+    alert("Hay " + (contenido.length) + " links en la página")
 }
+function imagenes() {
+    var contenido = document.getElementsByTagName('img');
+    alert("Hay " + (contenido.length ) + " imagenes en la página")
+}
+
+    
+    
+    
+
