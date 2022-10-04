@@ -6,7 +6,6 @@ window.onload = function(){
     botonimagenes.addEventListener("click",imagenes);
     function enlaces() {
         var contenido = document.getElementsByTagName('a');
-        alert(contenido.length);
         alert("Hay " + (contenido.length) + " links en la página")
     }
     function imagenes() {
