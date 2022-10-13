@@ -1,12 +1,16 @@
 'use strict'
 window.onload = function(){
-    //DOM para seleccionar botones y añadir los event listeners
+    //cargar botones y añadir event listeners
     var botonEnlaces = document.getElementById('enlaces');
     var botonReferencia = document.getElementById('referencia');
     var botonReferenciaParrafo = document.getElementById('referenciaParrafo');
+    var botonCambiarcolor = document.getElementById('cambiarColor');
+    var botonEliminarColor = document.getElementById('eliminarColor');
     botonEnlaces.addEventListener("click",enlaces);
     botonReferencia.addEventListener("click",referencias);
     botonReferenciaParrafo.addEventListener("click",referenciasPorParrafo);
+    botonCambiarcolor.addEventListener("click",cambioColor);
+    botonEliminarColor.addEventListener("click", eliminarColor);
     //funciones
     function enlaces() {
         var contenido = document.getElementsByTagName('a');
@@ -36,6 +40,18 @@ window.onload = function(){
             console.log(parrafoDato[i].href);
         }
         return "El parrafo "+ nParrafo + " tiene estos enlaces:\n" + resultado;
+    }
+    function cambioColor() {
+        var parrafos = document.getElementsByTagName('p');
+        for (let i = 0; i <3; i++) {
+            parrafos[i].style.backgroundColor = "green";          
+        } 
+    }
+    function eliminarColor() {
+        var parrafos = document.getElementsByTagName('p');
+        for (let i = 0; i <3; i++) {
+            parrafos[i].style.backgroundColor = "white";          
+        } 
     }
     
 }
