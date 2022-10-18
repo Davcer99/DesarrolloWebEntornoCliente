@@ -1,6 +1,6 @@
 'use strict'
-function cambiarTamaño(elEvento) {
-    var evento = elEvento || window.event;
+function cambiarTamaño(event) {
+    var evento = event || window.event;
     switch(evento.type) {
     case 'mouseover':
     this.style = "font-size: 16pt"
