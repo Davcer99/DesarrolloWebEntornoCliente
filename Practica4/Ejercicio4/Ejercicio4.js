@@ -4,10 +4,8 @@ window.onload = function(){
     contenedor.addEventListener('mouseleave',cambiarTamañoPequeño)
 }
 function cambiarTamaño (){
-    let texto = document.getElementById('contenedor');
-    texto.style = "font-size: 16pt"
+    this.style = "font-size: 16pt;"
 }
-function cambiarTamañoPequeño (){
-    let texto = document.getElementById('contenedor');
-    texto.style = "font-size: 12pt"
+function cambiarTamañoPequeño (){ 
+    this.style = "font-size: 12pt;"
 }
