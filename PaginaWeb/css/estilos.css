@@ -1,27 +1,55 @@
 body{
-    background-color: #333;
+    background-image: url(../img/fondo.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
     margin: 0;
 }
+
 header{
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 600px;
 }
 #logo{
     position: absolute;
-    background-color: lightgreen;
+    color: white;
     top: 10%;
     left: 5%;
     margin: 0;
 }
 .barra_de_navegacion{
     position:absolute;
-    top: 0;
-    right: 0;
-    background-color: lightcoral;
-    
+    top: 10%;
+    right: 5%;
+    color: white;
 }
 .introduccion{
     width: 100%;
     height: 200px;
+    background-color: white;
 }
+.sobre_nosotros{
+    width: 100%;
+    height: 900px;
+    background-color: whitesmoke;
+}
+.textoheader{
+    color: white;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 30%;
+}
+.textoheader #titulo{
+    font-size: 50px;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+
