@@ -5,13 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="./javascript/menu.js"></script>
     <title>Infotel</title>
 </head>
 <body>
 <div id="contenedor">
     <header class="encabezado">
-        <p id="logo">Logo</p>
-        <nav class="barra_de_navegacion">barra   de  navegacion</nav>
+        <img src="./img/logo.png" id="logo">
+        <nav class="barra_de_navegacion" id="barra_de_navegacion">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toogle" id="icono">
+            <i class="fa fa-bars"></i>
+        </div>
         <div class="textoheader">
             <h1 id="titulo">Infotel</h1>
             <p id="texto">Tu tienda de smartphones de confianza.</p>
