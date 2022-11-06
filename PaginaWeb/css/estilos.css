@@ -8,6 +8,7 @@ body{
     height: 300px;
     margin: 0;
     max-height: 300px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -16,6 +17,10 @@ header{
     height: 600px;
     background: hsla(243, 100%, 7%, 0.151);
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,0.5) 100%);
+}
+
+p{
+    margin: 0;
 }
 
 .menu-toogle{
@@ -49,7 +54,7 @@ header{
     text-transform: uppercase;
     transition: .2s;
     width: 150px;
-    height: 100px;
+    
 }
 
 .barra_de_navegacion ul li a:hover {
@@ -108,18 +113,6 @@ header{
     right: 5%;
     color: white;
 }
-.introduccion{
-    width: 100%;
-    height: 150px;
-    background-color: white;
-    text-align: center;
-}
-.productos{
-    width: 100%;
-    height: 900px;
-    background-color: rgb(224, 224, 224);
-    margin: 0;
-}
 .textoheader{
     color: white;
     position: absolute;
@@ -137,6 +130,39 @@ header{
     
 }
 
+.introduccion{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    text-align: center;
+}
+.productos{
+    padding: 40px 0 40px 0;
+    width: 100%;
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    text-align: center;
+}
+
+.productos h2 {
+    padding-bottom: 40px;
+}
+
+.contenedor_productos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.producto{
+    height: 500px;
+    width: 400px;
+    background-color: white;
+    text-align: center;
+    border-radius: 3%;
+}
+.producto img{
+   width: 100%;
+}
 section h2{
     color: #090979;
     margin: 0;
