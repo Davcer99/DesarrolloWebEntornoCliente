@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>El primer script</title>
+<script type="text/javascript" src="./Ejercicio1.js">
+</script>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form>
+        <label>Nombre: </label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label>Apellidos: </label>
+        <input type="text" name="apellidos"><br>
+        <label>Telefono: </label>
+        <input type="text" name="telefono"><br>
+        <label>Dni: </label>
+        <input type="text" name="dni"><br>
+        <label>Edad: </label>
+        <input type="text" name="edad"><br>
+        <label>Sexo: </label><br>
+        <p><input type="radio" name="sexo" value="hombre">Hombre</p>
+        <p><input type="radio" name="sexo" value="mujer">Mujer</p><br>
+        <label>Introducir mi foto: </label>
+        <input type="file" accept="image/png,image/jpeg">
+        <p><input type="checkbox"> Enviar publicidad</p><br>
+        <label> Elige aficion favorita </label>
+        <select name="aficion">
+            <option value="1">musica</option>
+            <option value="2">deportes</option>
+            <option value="3">lectura</option>
+        </select> <br>
+        <br>
+        <label> Observaciones: </label><br>
+        <textarea name="observaciones"></textarea><br>
+        <button type="reset">Borrar los datos introducidos</button>
+        <button type="submit">Guardar cambios</button>
+    </form>
+    <noscript>El navegador no tiene activado javascript</noscript>
+</body>
+</html>
