@@ -12,5 +12,5 @@ function cambiarMedidas(event) {
         height = Math.round(Math.random() * screen.height) + 'px';
         width = Math.round(Math.random() * screen.width) + 'px';
     }
-    /* event.stopPropagation(); */
+    event.stopPropagation(); 
 }
