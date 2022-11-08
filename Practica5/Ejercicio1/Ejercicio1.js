@@ -1,38 +1,33 @@
 window.onload = function(){
-    let nombre = document.getElementById('nombre');
-    nombre.focus();
+    document.getElementById('nombre').focus();
     var aficion = document.getElementById('aficion');
     aficion.addEventListener('change', mensaje)
+    var observaciones = document.getElementById('observaciones')
+    observaciones.addEventListener('keypress', limita)
     var formulario = document.getElementById('formulario')
     formulario.addEventListener('submit', validar)
     
 }
 function mensaje() {
-    var seleccionado = this.selectedIndex;
-    var seleccion = this.options[seleccionado].value; 
-    alert("La longitud de la lista es "+ this.options.length + "\nEl indice seleccionado es " + this.selectedIndex + "\nEl valor del indice seleccionado es "+ seleccion)
+     
+    alert("La longitud de la lista es "+ this.options.length + "\nEl indice seleccionado es " + this.selectedIndex + "\nEl valor del indice seleccionado es "+ this.value)
+}
+
+function limita(event) {
+    if(this.value.length >= 150){
+        alert('Has excedido el limite de caracteres permitidos');
+        event.preventDefault();
+        
+    }
 }
 
 function validar(event) {
-    var observaciones = document.getElementById('observaciones');
-    var dni = document.getElementById('dni');
-    var telefono = document.getElementById('telefono')
-
-    if(observaciones.value.length > 150){
-        event.preventDefault()
-    }
-
-    var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
-
-    if( !(/^\d{8}[A-Z]$/.test(dni)) ) {
-        event.preventDefault()
-    }
-
-    if(dni.charAt(8) != letras[(dni.substring(0, 8))%23]) {
-        event.preventDefault()
-    }
-
-    if( !(/^\d{9}$/.test(telefono)) ) {
-        event.preventDefault()
+    var telefono = documetn.getElementById('telefono')
+    if(!(/^\d{9}$/.test(telefono)) ) {
+        alert('El telefono no tiene 9 digitos');
+        event.preventDefault();
+    }else if (document.getElementById('dni').value == "") {
+        alert("El campo dni esta vacio");
+        event.preventDefault();
     }
 }
