@@ -29,14 +29,13 @@ p{
     top: 10%;
     right: 5%;
     font-size: 30px;
-    padding: 10px;
+    padding: 10px 10px 14px 10px;
     background-color: white;
     border-radius: 50%;
     height: 30px;
     width: 30px;
     text-align: center;
     cursor: pointer;
-
 }
 .barra_de_navegacion li{
     position: relative;
@@ -58,11 +57,11 @@ p{
 }
 
 .barra_de_navegacion ul li a:hover {
-    font-size: 30px;
+    transform: scale(1.5);
 }
 
 .show{
-    height: 125px !important;
+    height: 180px !important;
 }
 
 @media  screen and (max-width:800px) {
@@ -71,7 +70,7 @@ p{
     }
 
     .barra_de_navegacion{
-        position:relative;
+        position:absolute;
         top: 60px;
         left: 0;
         width: 100%;
@@ -136,6 +135,10 @@ p{
     background-color: white;
     text-align: center;
 }
+
+.introduccion p {
+    margin: 10px;
+}
 .productos{
     padding: 40px 0 40px 0;
     width: 100%;
@@ -151,17 +154,33 @@ p{
 .contenedor_productos{
     display: flex;
     justify-content: space-around;
+    flex-flow: row wrap;
+    
+    
 }
 
 .producto{
-    height: 500px;
-    width: 400px;
+    width: 300px;
+    margin: 20px;
     background-color: white;
     text-align: center;
     border-radius: 3%;
-}
+    padding: 20px;
+} 
 .producto img{
    width: 100%;
+}
+
+.producto h3{
+    color: #090979;
+}
+
+.producto button{
+    margin: 20px;
+    background-color: #090979;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
 }
 section h2{
     color: #090979;
