@@ -61,7 +61,7 @@ p{
 }
 
 .show{
-    height: 180px !important;
+    height: 150px !important;
 }
 
 @media  screen and (max-width:800px) {
@@ -83,6 +83,7 @@ p{
         display: block;
         text-align: center;
         height: 30px;
+        margin: 20px;
     }
 
     .barra_de_navegacion ul li a{

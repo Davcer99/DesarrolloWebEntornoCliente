@@ -1,11 +1,10 @@
-window.onload = function(){
+
+function cargarProductos() {
     var productos = document.getElementsByClassName('producto');
-   for (let i = 0; i < productos.length; i++) {
-        productos[i].addEventListener('mouseenter', ampliar)
-        productos[i].addEventListener('mouseleave', disminuir)
-   }
-   
-    
+    for (let i = 0; i < productos.length; i++) {
+         productos[i].addEventListener('mouseenter', ampliar)
+         productos[i].addEventListener('mouseleave', disminuir)
+    }
 }
 
 function ampliar() {

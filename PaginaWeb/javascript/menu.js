@@ -1,11 +1,12 @@
-window.onload = function(){
-    let menuToogle = document.getElementById('icono');
-    menuToogle.addEventListener('click',desplegar)
+function cargarMenuIcono(params) {
+    var menuToogle = document.getElementById('icono');
+    menuToogle.addEventListener("click",desplegar) 
 }
 
 function desplegar(event) {
-    let menu = document.getElementById('barra_de_navegacion');
-    let menuToogleIcon = document.querySelector('.menu-toogle i')
+    
+    var menu = document.getElementById('barra_de_navegacion');
+    var menuToogleIcon = document.querySelector('.menu-toogle i')
     menu.classList.toggle('show');
 
     if(menu.classList.contains('show')){
