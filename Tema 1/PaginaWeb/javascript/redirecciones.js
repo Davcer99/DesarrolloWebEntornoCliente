@@ -1,14 +1,19 @@
-window.onload = function () {
-    var boton = document.getElementById('mostrar_fichero');
-    boton.addEventListener('click', sacardatos)
-    
+function cargarRedirecciones() {
+    var inicio = document.getElementById('inicio')
+    var productos = document.getElementById('productos')
+    var contacto = document.getElementById('contacto')
+    inicio.addEventListener('click',cargarInicio);
+    productos.addEventListener('click', cargarProductos);
+    contacto.addEventListener('click', cargarContacto);
 }
+
 var XMLHttpRequestObject = false;
 XMLHttpRequestObject = new XMLHttpRequest();
 
-function sacardatos(){
+function cargarInicio() {
+    
     if(XMLHttpRequestObject) {
-        var objeto = document.getElementById('contenedor');
+        var objeto = document.getElementById('contenido');
         XMLHttpRequestObject.open("GET", "datos.txt");
         XMLHttpRequestObject.onreadystatechange = function(){
             if (XMLHttpRequestObject.readyState == 4 &&
