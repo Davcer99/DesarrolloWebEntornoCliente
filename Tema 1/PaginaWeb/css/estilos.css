@@ -143,9 +143,40 @@ p{
 
 .contacto{
     width: 100%;
-    height: 150px;
-    background-color: white;
+    background-color: rgb(224, 224, 224);
     text-align: center; 
+    padding-bottom: 90px;
+}
+
+.mapa p{
+    margin-bottom: 10px;
+}
+
+.formulario p{
+    margin-bottom: 10px;
+}
+
+
+.formulario input{
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    margin: 5px;
+    background-color: #090979;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.contenedorFormulario{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 20% 0 20%;
+    padding: 40px;
+    background-color: white;
+    border-radius: 20px;
+
 }
 
 .productos{
@@ -194,6 +225,7 @@ p{
 section h2{
     color: #090979;
     margin: 0;
+    padding-top: 30px;
 }
 footer{
     position: relative;

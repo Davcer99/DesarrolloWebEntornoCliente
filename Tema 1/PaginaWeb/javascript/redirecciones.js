@@ -29,11 +29,12 @@ function cargarProductos() {
     
     if(XMLHttpRequestObject) {
         var objeto2 = document.getElementById('contenido');
-        XMLHttpRequestObject.open("GET", "contacto.html");
+        XMLHttpRequestObject.open("GET", "productos.html");
         XMLHttpRequestObject.onreadystatechange = function(){
             if (XMLHttpRequestObject.readyState == 4 &&
             XMLHttpRequestObject.status == 200) {
             objeto2.innerHTML = XMLHttpRequestObject.responseText;
+            cargarProductosOnload();
             }
         }
         XMLHttpRequestObject.send(null);
