@@ -1,9 +1,9 @@
 
-function cargarProductos() {
-    var productos = document.getElementsByClassName('producto');
-    for (let i = 0; i < productos.length; i++) {
-         productos[i].addEventListener('mouseenter', ampliar)
-         productos[i].addEventListener('mouseleave', disminuir)
+function cargarProductosOnload() {
+    var smartphones = document.getElementsByClassName('producto');
+    for (let i = 0; i < smartphones.length; i++) {
+         smartphones[i].addEventListener('mouseenter', ampliar)
+         smartphones[i].addEventListener('mouseleave', disminuir)
     }
 }
 

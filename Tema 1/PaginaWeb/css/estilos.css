@@ -140,6 +140,14 @@ p{
 .introduccion p {
     margin: 10px;
 }
+
+.contacto{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    text-align: center; 
+}
+
 .productos{
     padding: 40px 0 40px 0;
     width: 100%;
