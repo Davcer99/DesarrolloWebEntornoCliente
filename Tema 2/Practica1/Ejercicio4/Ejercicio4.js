@@ -14,12 +14,15 @@ function cargarXML() {
                 var contenedor = document.getElementById('contenedor')
                 var resultado= "";
                 /* contenedor.innerHTML = XMLHttpRequestObject.responseXML */
-                var xml = XMLHttpRequestObject.responseXML.getElementsbyTagName('agenda');
-                for (let i = 0; i < xml.length; i++) {
-                    var nombre = xml[i].nombre
-                    var apellidos = xml[i].apellidos
-                    resultado = "<p>"+ nombre + apellidos +"</p>"                    
+                var xml = XMLHttpRequestObject.responseXML;
+                var agendas = xml.getElementsByTagName('agenda')
+                for (let i = 0; i < agendas.length; i++) {
+                    var agenda = agendas[i]
+                    var nombre = agenda.getElementsByTagName('nombre')[0].firstChild.nodeValue
+                    var apellidos = agenda.getElementsByTagName('apellido')[0].firstChild.nodeValue
+                    resultado = "<p>"+ nombre + " "+ apellidos +"</p>"                    
                 }
+                contenedor.innerHTML = resultado;
             }
         }
         XMLHttpRequestObject.send(null);
