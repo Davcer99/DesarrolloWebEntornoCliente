@@ -1,4 +1,4 @@
-function cargarMenuIcono(params) {
+function cargarMenuIcono() {
     var menuToogle = document.getElementById('icono');
     menuToogle.addEventListener("click",desplegar) 
 }
