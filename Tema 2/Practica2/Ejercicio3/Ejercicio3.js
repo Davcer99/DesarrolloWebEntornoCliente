@@ -17,14 +17,17 @@ function cargarPhp() {
         var envio1="nombre="+nombre;
         var envio2="apellidos="+apellidos;
         var envio3="edad="+edad;
-        var url=ruta+"?"+envio1+"&"+envio2+"&"+envio3; //url para enviar
-        XMLHttpRequestObject.open("POST", url)
+        var misDatos=envio1+"&"+envio2+"&"+envio3; //url para enviar
+        XMLHttpRequestObject.open("POST", ruta, true)
+        XMLHttpRequestObject.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        XMLHttpRequestObject.setRequestHeader("Content-length", misDatos.length);
+        XMLHttpRequestObject.setRequestHeader("Connection", "close");
         XMLHttpRequestObject.onreadystatechange = function(){
             if (XMLHttpRequestObject.readyState == 4 &&
                 XMLHttpRequestObject.status == 200) {
                 contenedor.innerHTML = XMLHttpRequestObject.responseText
             }
         }
-        XMLHttpRequestObject.send(null);
+        XMLHttpRequestObject.send(misDatos);
     }
 }
