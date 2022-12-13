@@ -13,12 +13,11 @@ function cargarPhp() {
         var apellidos = document.getElementById('apellidos').value;
         var edad = document.getElementById('edad').value; 
         //Escribir la url para enviar los datos anteriores:
-        var ruta="prueba.php" //ruta del archivo
         var envio1="nombre="+nombre;
         var envio2="apellidos="+apellidos;
         var envio3="edad="+edad;
         var misDatos=envio1+"&"+envio2+"&"+envio3; //url para enviar
-        XMLHttpRequestObject.open("POST", ruta, true)
+        XMLHttpRequestObject.open("POST", "prueba.php", true)
         XMLHttpRequestObject.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         XMLHttpRequestObject.setRequestHeader("Content-length", misDatos.length);
         XMLHttpRequestObject.setRequestHeader("Connection", "close");
