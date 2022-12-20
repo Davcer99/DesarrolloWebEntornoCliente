@@ -1,0 +1,9 @@
+$(document).ready(function()
+{
+    $("#texto").mouseover(function(){
+        $("#texto").addClass("grande")
+    })
+    $("#texto").mouseout(function(){
+        $(this).removeClass("grande")
+    })
+});
