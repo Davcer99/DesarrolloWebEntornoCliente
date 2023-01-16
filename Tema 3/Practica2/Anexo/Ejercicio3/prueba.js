@@ -1,0 +1,1 @@
+alert("alert desde el archivo js importado")
