@@ -9,8 +9,8 @@ $(document).ready(function(){
         request.done(function(txt){
             $("#contenedor").html(txt)
         });
-        request.fail(function(jqXHR, textStatus, errorMessage){
-            alert("Fallo al intentar cargar el archivo " + textStatus + " " + errorMessage)
+        request.fail(function(error, textStatus){
+            alert("Fallo al intentar cargar el archivo " + error.status + " "+textStatus)
         })
     }) 
 });
