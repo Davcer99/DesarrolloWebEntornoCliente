@@ -2,7 +2,7 @@ $(document).ready(function(){
     $("#btn").click(function(){
         let request = $.ajax({
             method: "GET",
-            url: "pruea.php",
+            url: "prueba.php",
             dataType: "script"
         })
         
