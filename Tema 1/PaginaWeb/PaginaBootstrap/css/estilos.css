@@ -27,7 +27,7 @@ body{
 
 /* Ventana */
 #ventana{
-    height: 300px;
+    height: 340px;
     background: hsla(243, 100%, 7%, 0.151);
     background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 0%, rgba(9,9,121,0.5) 35%, rgba(0,212,255,0.5) 100%);
 }
@@ -40,9 +40,116 @@ body{
 }
 /* Fin ventana */
 
+/* Carrusel Productos */
+#contenedorCarrusel{
+    padding: 40px;
+}
+#contenedorCarrusel h1{
+    margin-bottom: 20px;
+}
+
+.carrouselProductos{
+    width: 600px;
+    background-color: whitesmoke;
+    left: 39%;
+    padding: 20px;
+}
+
+/* Fin carrusel productos */
+
 /* Busqueda */
 .busqueda{
     background-color: whitesmoke;
-    height: 1000px;
+    height: 250px;
 }
 /* Fin busqueda */
+
+/* Productos mas vendidos */
+.producto{
+    width: 300px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 3%;
+    padding: 20px;
+} 
+.producto img{
+   width: 100%;
+}
+
+.producto h3{
+    color: #090979;
+}
+
+.producto button{
+    margin: 20px;
+    background-color: #090979;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+section h2{
+    color: #090979;
+    margin: 0;
+    padding-top: 30px;
+}
+/* Fin productos mas vendidos */
+
+/* Pie de página */
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    font-family: 'Open Sans', sans-serif;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+/* Fin pie de página */
