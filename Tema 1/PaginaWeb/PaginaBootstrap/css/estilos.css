@@ -43,17 +43,21 @@ body{
 /* Carrusel Productos */
 #contenedorCarrusel{
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #contenedorCarrusel h1{
     margin-bottom: 20px;
+    
 }
 
 .carrouselProductos{
-    width: 600px;
     background-color: whitesmoke;
-    left: 39%;
     padding: 20px;
 }
+
+
 
 /* Fin carrusel productos */
 
