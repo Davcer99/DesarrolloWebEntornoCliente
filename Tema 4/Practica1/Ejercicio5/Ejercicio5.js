@@ -1,4 +1,3 @@
-"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -14,8 +13,27 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-exports.__esModule = true;
-var Ejercicio4_1 = require("./ts/Ejercicio4");
+var Alumno = /** @class */ (function () {
+    function Alumno(nombre, edad, curso) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.curso = curso;
+    }
+    Alumno.prototype.mostrarDatos = function () {
+        var result = "nombre: ".concat(this.nombre, " \n edad: ").concat(this.edad, " \n curso: ").concat(this.curso);
+        return result;
+    };
+    Alumno.prototype.getNombre = function () {
+        return this.nombre;
+    };
+    Alumno.prototype.getEdad = function () {
+        return this.edad;
+    };
+    Alumno.prototype.getCurso = function () {
+        return this.curso;
+    };
+    return Alumno;
+}());
 var Curso = /** @class */ (function (_super) {
     __extends(Curso, _super);
     function Curso(nombre, edad, curso, nombreCurso) {
@@ -23,10 +41,13 @@ var Curso = /** @class */ (function (_super) {
         _this.nombreCurso = nombreCurso;
         return _this;
     }
+    Curso.prototype.getNombreCurso = function () {
+        return this.nombreCurso;
+    };
     Curso.prototype.mostrarDatosYCurso = function () {
-        console.log("Mi nombre es ".concat(_super.prototype.getNombre, "\n Tengo ").concat(_super.prototype.getEdad, " a\u00F1os\n Estoy en ").concat(_super.prototype.getCurso, " ").concat(this.getCurso));
+        console.log("Mi nombre es ".concat(this.getNombre, "\n Tengo ").concat(this.getEdad, " a\u00F1os\n Estoy en ").concat(this.getCurso, " ").concat(this.getNombreCurso));
     };
     return Curso;
-}(Ejercicio4_1.Alumno));
+}(Alumno));
 var al = new Curso("Juan", 23, "1CFSJ", "Primer curso de grado superior de DAW");
 al.mostrarDatosYCurso();
