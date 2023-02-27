@@ -38,7 +38,7 @@ class Curso extends Alumno {
     return this.nombreCurso;
   }
   public mostrarDatosYCurso(): any {
-   console.log(`Mi nombre es ${this.getNombre}\n Tengo ${this.getEdad} años\n Estoy en ${this.getCurso} ${this.getNombreCurso}`)
+   console.log(`Mi nombre es ${this.getNombre()}\n Tengo ${this.getEdad()} años\n Estoy en ${this.getCurso()} ${this.getNombreCurso()}`)
   }
 }
 const al = new Curso("Juan", 23,"1CFSJ","Primer curso de grado superior de DAW")

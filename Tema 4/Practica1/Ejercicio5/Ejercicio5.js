@@ -45,7 +45,7 @@ var Curso = /** @class */ (function (_super) {
         return this.nombreCurso;
     };
     Curso.prototype.mostrarDatosYCurso = function () {
-        console.log("Mi nombre es ".concat(this.getNombre, "\n Tengo ").concat(this.getEdad, " a\u00F1os\n Estoy en ").concat(this.getCurso, " ").concat(this.getNombreCurso));
+        console.log("Mi nombre es ".concat(this.getNombre(), "\n Tengo ").concat(this.getEdad(), " a\u00F1os\n Estoy en ").concat(this.getCurso(), " ").concat(this.getNombreCurso()));
     };
     return Curso;
 }(Alumno));
